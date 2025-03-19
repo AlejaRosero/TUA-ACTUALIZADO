@@ -84,33 +84,38 @@
          </property>
         </widget>
        </item>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_5">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>300</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>30</height>
-          </size>
+       <item>
+        <widget class="QToolButton" name="toolButton">
+         <property name="styleSheet">
+          <string notr="true">QToolButton {
+    border: none; /* Sin bordes */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    color: rgb(22, 52, 77); /* Texto en color azul oscuro */
+    font: 10px; /* Tamaño de fuente */
+    cursor: not-allowed; /* Cambiar el cursor a uno que indique que no se puede interactuar */
+}
+
+QToolButton:disabled {
+    background-color: rgb(255, 255, 255); /* Fondo blanco cuando está deshabilitado */
+    color: rgb(22, 52, 77); /* Texto en el mismo color */
+    cursor: not-allowed; /* Cursor para indicar que no se puede hacer nada */
+}
+</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Usuario:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>Usuario:</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/iconos/user.png</normaloff>../../assets/iconos/user.png</iconset>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
          </property>
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="LabelUsuario">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -131,21 +136,24 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit {
-	background-color: rgb(241, 241, 241);
-	background-color: rgb(238, 255, 251);
-    background-color: white; /* Fondo blanco */
-    border: 0.5px solid #000000; /* Borde del color especificado */
-    border-radius: 5px; /* Bordes redondeados */
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
     padding: 5px; /* Espaciado interno */
-	font: 10px;
-}
-QLineEdit:hover {
-    border: 1.5px solid  #1A4567; /* Bordes más azules cuando el mouse pasa sobre el QLineEdit */
+    font: 10px;
 }
 
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
 QLineEdit:focus {
-    border:1.5px solid  #1A4567;; /* Borde más azul cuando el QLineEdit tiene foco */
-    background-color: #f1f1f1; /* Fondo gris claro cuando tiene foco */
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
 }
 </string>
@@ -155,33 +163,38 @@ QLineEdit:focus {
          </property>
         </widget>
        </item>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>300</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>30</height>
-          </size>
+       <item>
+        <widget class="QToolButton" name="toolButton_2">
+         <property name="styleSheet">
+          <string notr="true">QToolButton {
+    border: none; /* Sin bordes */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    color: rgb(22, 52, 77); /* Texto en color azul oscuro */
+    font: 10px; /* Tamaño de fuente */
+    cursor: not-allowed; /* Cambiar el cursor a uno que indique que no se puede interactuar */
+}
+
+QToolButton:disabled {
+    background-color: rgb(255, 255, 255); /* Fondo blanco cuando está deshabilitado */
+    color: rgb(22, 52, 77); /* Texto en el mismo color */
+    cursor: not-allowed; /* Cursor para indicar que no se puede hacer nada */
+}
+</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Contraseña:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>Contraseña:</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/iconos/padlock.png</normaloff>../../assets/iconos/padlock.png</iconset>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
          </property>
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="LabelPassword">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -202,21 +215,24 @@ QLineEdit:focus {
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit {
-	background-color: rgb(241, 241, 241);
-	background-color: rgb(238, 255, 251);
-    background-color: white; /* Fondo blanco */
-    border: 0.5px solid #000000; /* Borde del color especificado */
-    border-radius: 5px; /* Bordes redondeados */
+
+    background-color: #f5f5f5; /* Gris más claro cuando se escribe */
+    border: none; /* Sin bordes generales */
+    border-bottom: 1px solid #000000; /* Solo borde inferior inicial */
+    border-radius: 0px; /* Sin bordes redondeados */
     padding: 5px; /* Espaciado interno */
-	font: 10px;
-}
-QLineEdit:hover {
-    border: 1.5px solid  #1A4567; /* Bordes más azules cuando el mouse pasa sobre el QLineEdit */
+    font: 10px;
 }
 
+/* Al pasar el mouse, se agregan los bordes izquierdo y derecho */
+QLineEdit:hover {
+    border-bottom: 2px solid #16344D; /* Mantiene el borde inferior */
+}
+
+/* Al hacer clic (foco), se mantiene igual que el hover */
 QLineEdit:focus {
-    border:1.5px solid  #1A4567;; /* Borde más azul cuando el QLineEdit tiene foco */
-    background-color: #f1f1f1; /* Fondo gris claro cuando tiene foco */
+    border-bottom: 2px solid #16344D;
+    background-color: #e0e0e0; /* Gris más claro cuando se escribe */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra opcional al activar */
 }
 </string>
@@ -243,7 +259,7 @@ QLineEdit:focus {
         </spacer>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="BtnIngresar">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -274,7 +290,7 @@ QLineEdit:focus {
 }
 
 QLabel:hover {
-    background-color: #1A4567; /* Color de fondo al pasar el mouse (opcional) */
+    background-color: #4C6D8C ; /* Color de fondo al pasar el mouse (opcional) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse (opcional) */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse (opcional) */
     transition: all 0.3s ease-in-out; /* Transición suave (opcional) */
