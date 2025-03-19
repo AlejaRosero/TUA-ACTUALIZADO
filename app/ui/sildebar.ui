@@ -346,7 +346,7 @@ QPushButton::icon {
 }
 
 QPushButton:hover {
-    background-color: #4C6D8C; /* Color de fondo al pasar el mouse */
+    background-color: #D9844C; /* Color de fondo al pasar el mouse */
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse */

@@ -62,8 +62,8 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>140</width>
-           <height>30</height>
+           <width>80</width>
+           <height>27</height>
           </size>
          </property>
          <property name="cursor">
@@ -72,7 +72,7 @@
          <property name="styleSheet">
           <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
-    border-radius: 2px; /* Bordes redondeados */
+    border-radius: 5px; /* Bordes redondeaados */
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
@@ -81,7 +81,7 @@
 }
 
 QPushButton:hover {
-    background-color: #1A4567; /* Color de fondo al pasar el mouse */
+    background-color: #4C6D8C ; /* Color de fondo al pasar el mouse */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse */
     transition: all 0.3s ease-in-out; /* Transición suave */
@@ -111,8 +111,8 @@ QPushButton::icon {
          </property>
          <property name="minimumSize">
           <size>
-           <width>140</width>
-           <height>30</height>
+           <width>80</width>
+           <height>27</height>
           </size>
          </property>
          <property name="cursor">
@@ -121,7 +121,7 @@ QPushButton::icon {
          <property name="styleSheet">
           <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
-    border-radius: 2px; /* Bordes redondeados */
+    border-radius: 5px; /* Bordes redondeaados */
     color: white; /* Color del texto */
     padding: 5px 10px; /* Espaciado interno */
     border: none; /* Elimina el borde predeterminado */
@@ -130,14 +130,14 @@ QPushButton::icon {
 }
 
 QPushButton:hover {
-    background-color: #1A4567; /* Color de fondo al pasar el mouse */
+    background-color: #4C8C6D ; /* Color de fondo al pasar el mouse */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse */
     transition: all 0.3s ease-in-out; /* Transición suave */
 }
 
 QPushButton::icon {
-    padding-right: 10px; /* Espaciado entre el icono y el texto */
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
 }
 </string>
          </property>
@@ -146,7 +146,7 @@ QPushButton::icon {
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../assets/iconos/actualizar-flecha.png</normaloff>../../assets/iconos/actualizar-flecha.png</iconset>
+           <normaloff>../../assets/iconos/guardar-el-archivo.png</normaloff>../../assets/iconos/guardar-el-archivo.png</iconset>
          </property>
         </widget>
        </item>

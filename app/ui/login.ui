@@ -314,7 +314,7 @@ QLineEdit:focus {
 }
 
 QLabel:hover {
-    background-color: #4C6D8C; /* Color de fondo al pasar el mouse (opcional) */
+    background-color: #D9844C; /* Color de fondo al pasar el mouse (opcional) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse (opcional) */
     transform: scale(1.02); /* Ligero aumento al pasar el mouse (opcional) */
     transition: all 0.3s ease-in-out; /* Transición suave (opcional) */
