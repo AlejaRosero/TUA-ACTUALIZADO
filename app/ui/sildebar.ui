@@ -170,6 +170,9 @@ QPushButton::icon {
              <height>25</height>
             </size>
            </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
     background-color: #16344D; /* Color de fondo */
@@ -199,6 +202,61 @@ QPushButton::icon {
            <property name="icon">
             <iconset>
              <normaloff>../../assets/iconos/folder.png</normaloff>../../assets/iconos/folder.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #16344D; /* Color de fondo */
+    border-radius: 2px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Elimina el borde predeterminado */
+    font-size: 10px; /* Tamaño de fuente */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+QPushButton:hover {
+    background-color: #1A4567; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+    transform: scale(1.02); /* Ligero aumento al pasar el mouse */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+QPushButton::icon {
+    padding-right: 5px; /* Espaciado entre el icono y el texto */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Control y Monitoreo</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../assets/iconos/stock-chart.png</normaloff>../../assets/iconos/stock-chart.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
            </property>
           </widget>
          </item>
